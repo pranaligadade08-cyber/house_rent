@@ -1,0 +1,130 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+}
+
+/* LEFT PANEL (Desktop Only) */
+.left-panel {
+    background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+    color: white;
+    padding: 60px;
+}
+
+.left-panel h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 18px;
+    max-width: 400px;
+    opacity: 0.9;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    background-color: #f1f5f9;
+    padding: 20px;
+}
+
+/* FORM BOX */
+.form-box {
+    background: white;
+    padding: 40px;
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.form-box:hover {
+    transform: translateY(-5px);
+}
+
+.form-box h2 {
+    margin-bottom: 25px;
+    color: #0d1b2a;
+    font-weight: 600;
+}
+
+/* INPUT FIELDS */
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ff7a00;
+    box-shadow: 0 0 0 0.15rem rgba(255, 122, 0, 0.25);
+}
+
+/* LOGIN BUTTON */
+.btn-dark {
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background: #1b263b;
+}
+
+/* REGISTER BUTTON */
+.btn-warning {
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #e66a00;
+    border-color: #e66a00;
+}
+
+/* LINKS */
+.form-box p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-box a {
+    color: #ff7a00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 991px) {
+
+    .left-panel {
+        display: none;
+    }
+
+    body {
+        background: linear-gradient(135deg, #1b263b, #0d1b2a);
+    }
+
+    .form-box {
+        padding: 30px;
+        margin: 20px;
+    }
+}

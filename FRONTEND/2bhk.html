@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="property-details.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/1200x/96/4e/b7/964eb78ac42ec1ac436c5002d45ac692.jpg" width="50" class="me-2">
+        <strong>आपलंघर 🏡</strong>
+    </div>
+
+    <div class="header-info">
+        <h2>2 BHK - Sane Guruji Vasahat</h2>
+        <h3 class="price">₹ 14,500 / month</h3>
+    </div>
+</header>
+
+<!-- Image Gallery -->
+<section class="gallery">
+    <img id="mainImage"
+        src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80"
+        class="main-img">
+
+    <div class="thumbs">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)" class="active">
+        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+        <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+    </div>
+</section>
+
+<!-- Responsive Grid Layout -->
+<div class="content-wrapper">
+
+    <div class="left-content">
+
+        <section class="card">
+            <h3>Property Details</h3>
+            <p><strong>Area:</strong> 1200 sqft</p>
+            <p><strong>Bedrooms:</strong> 2</p>
+            <p><strong>Bathrooms:</strong> 2</p>
+            <p><strong>Furnishing:</strong> Semi Furnished</p>
+            <p><strong>Parking:</strong> Available</p>
+            <p><strong>Balcony:</strong> Yes</p>
+        </section>
+
+        <section class="card">
+            <h3>Amenities</h3>
+            <ul class="amenities-list">
+                <li>24/7 Water Supply</li>
+                <li>Power Backup</li>
+                <li>Security</li>
+                <li>Garden Area</li>
+                <li>Nearby School & Market</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Reviews</h3>
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>Very spacious and clean property. Loved it!</p>
+                <small>- Amit</small>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐
+                <p>Good location and peaceful area.</p>
+                <small>- Sneha</small>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="right-content">
+
+        <section class="card">
+            <h3>Owner Information</h3>
+            <p><strong>Name:</strong> Rahul Patil</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Email:</strong> rahul@gmail.com</p>
+        </section>
+
+        <section class="card contact-form">
+            <h3>Send Inquiry</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>📍 Kolhapur, Maharashtra | 📞 +91 98602 69423| 📧 support@aapalghar.com</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Aapal Ghar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+function changeImage(element) {
+    document.getElementById("mainImage").src = element.src;
+    const thumbs = document.querySelectorAll(".thumbs img");
+    thumbs.forEach(img => img.classList.remove("active"));
+    element.classList.add("active");
+}
+</script>
+
+</body>
+</html>

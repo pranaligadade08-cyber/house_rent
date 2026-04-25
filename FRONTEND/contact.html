@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | RentNest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/abcd1234.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+
+    <div class="logo" style="border-radius: 50%;">
+        <img src="https://i.pinimg.com/1200x/96/4e/b7/964eb78ac42ec1ac436c5002d45ac692.jpg" >
+        <span>आपलंघर 🏡</span>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>Find Your Perfect Rental Home With Confidence</h1>
+            <p>Have questions about renting or listing? Our expert team is here to guide you every step of the way.</p>
+            <a href="#contact-form" class="hero-btn">Contact Support</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT CARDS ================= -->
+<section class="cards">
+    <div class="card">
+        <i class="fas fa-phone"></i>
+        <h3>📞Call Support</h3>
+        <p>+91 98602 69423</p>
+        <span>Mon - Sat (9AM - 6PM)</span>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-envelope"></i>
+        <h3>📧Email Us</h3>
+        <p>support@rentnest.com</p>
+        <span>24/7 Response</span>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>📍Visit Office</h3>
+        <p>Kolhapur, India</p>
+        <span>Head Office</span>
+    </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="contact-section" id="contact-form">
+    <div class="form-container">
+
+        <div class="form-left">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="POST">
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Inquiry Type</label>
+                        <select name="inquiry" required>
+                            <option value="">Select Inquiry Type</option>
+                            <option>Rental Inquiry</option>
+                            <option>List Property</option>
+                            <option>Complaint</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group full">
+                    <label>Your Message</label>
+                    <textarea rows="6" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Submit Message</button>
+
+            </form>
+        </div>
+
+        <div class="form-right">
+            <h3>Why Choose RentNest?</h3>
+            <ul>
+                <li>✔ Verified Listings</li>
+                <li>✔ Secure Communication</li>
+                <li>✔ Trusted Owners</li>
+                <li>✔ 24/7 Customer Support</li>
+                <li>✔ Fast Response Time</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h4>How quickly will I get a response?</h4>
+        <p>Our team typically replies within 24 hours.</p>
+    </div>
+
+    <div class="faq-item">
+        <h4>Is listing my property free?</h4>
+        <p>Yes, basic listing is free. Premium promotion options are available.</p>
+    </div>
+
+    <div class="faq-item">
+        <h4>Are properties verified?</h4>
+        <p>Yes, we verify listings before making them public.</p>
+    </div>
+
+    <div class="faq-item">
+        <h4>How do I report fake listings?</h4>
+        <p>Use the report option and our team will investigate immediately.</p>
+    </div>
+
+    <div class="faq-item">
+        <h4>Is my information secure?</h4>
+        <p>We use encrypted systems to keep your data protected.</p>
+    </div>
+</section>
+
+<!-- ================= MAP SECTION ================= -->
+<section class="map-section">
+    <h2>Our Office Location</h2>
+    <p>Visit us at our head office for direct assistance.</p>
+
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Mumbai,India&output=embed"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>📍 Kolhapur, Maharashtra | 📞 +91 98602 69423| 📧 support@aapalghar.com</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Aapal Ghar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- FAQ TOGGLE SCRIPT -->
+<script>
+document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+        const paragraph = item.querySelector("p");
+        paragraph.style.display =
+            paragraph.style.display === "block" ? "none" : "block";
+    });
+});
+</script>
+
+</body>
+</html>

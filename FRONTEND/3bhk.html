@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 BHK - Rankala</title>
+    <link rel="stylesheet" href="property-details.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/1200x/96/4e/b7/964eb78ac42ec1ac436c5002d45ac692.jpg" width="50" class="me-2">
+        <strong>आपलंघर 🏡</strong>
+    </div>
+
+    <div class="header-info">
+        <h2>3 BHK - Rankala</h2>
+        <h3 class="price">₹ 30,000 / month</h3>
+    </div>
+</header>
+
+<!-- Image Gallery -->
+<section class="gallery">
+    <img id="mainImage"
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80"
+        class="main-img">
+
+    <div class="thumbs">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)" class="active">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+        <img src="https://images.unsplash.com/photo-1600047508788-786f383ab2b1?auto=format&fit=crop&w=600&q=60" onclick="changeImage(this)">
+    </div>
+</section>
+
+<!-- Responsive Grid -->
+<div class="content-wrapper">
+
+    <!-- LEFT SIDE -->
+    <div class="left-content">
+
+        <section class="card">
+            <h3>Property Details</h3>
+            <p><strong>Area:</strong> 2180 sqft</p>
+            <p><strong>Bedrooms:</strong> 3</p>
+            <p><strong>Bathrooms:</strong> 3</p>
+            <p><strong>Furnishing:</strong> Semi Furnished</p>
+            <p><strong>Parking:</strong> 2 Car Parking</p>
+            <p><strong>Balcony:</strong> 2</p>
+        </section>
+
+        <section class="card">
+            <h3>Amenities</h3>
+            <ul class="amenities-list">
+                <li>24/7 Water Supply</li>
+                <li>Power Backup</li>
+                <li>Security</li>
+                <li>Garden Area</li>
+                <li>Nearby School & Market</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Reviews</h3>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>Very spacious and clean property. Loved it!</p>
+                <small>- Amit</small>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐
+                <p>Good location and peaceful area.</p>
+                <small>- Sneha</small>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-content">
+
+        <section class="card">
+            <h3>Owner Information</h3>
+            <p><strong>Name:</strong> Shweta Deshmukh</p>
+            <p><strong>Phone:</strong> +91 9988776655</p>
+            <p><strong>Email:</strong> shweta@gmail.com</p>
+        </section>
+
+        <section class="card contact-form">
+            <h3>Send Inquiry</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>📍 Kolhapur, Maharashtra | 📞 +91 98602 69423 | 📧 support@aapalghar.com</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Aapal Ghar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+function changeImage(element) {
+    document.getElementById("mainImage").src = element.src;
+    const thumbs = document.querySelectorAll(".thumbs img");
+    thumbs.forEach(img => img.classList.remove("active"));
+    element.classList.add("active");
+}
+</script>
+
+</body>
+</html>

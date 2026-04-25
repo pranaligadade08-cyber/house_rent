@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 BHK - Rajendra Nagar</title>
+    <link rel="stylesheet" href="property-details.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="top-bar">
+    <div class="logo">
+        <img src="https://i.pinimg.com/1200x/96/4e/b7/964eb78ac42ec1ac436c5002d45ac692.jpg" width="50" class="me-2">
+        <strong>आपलंघर 🏡</strong>
+    </div>
+    <div class="header-info">
+        <h2>1 BHK - Rajendra Nagar</h2>
+        <h3 class="price">₹ 10,000 / month</h3>
+    </div>
+</header>
+
+<!-- Gallery -->
+<section class="gallery">
+    <img id="mainImage"
+        src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1400&q=80"
+        class="main-img">
+
+    <div class="thumbs">
+        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=60"
+             onclick="changeImage(this)" class="active">
+
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=600&q=60"
+             onclick="changeImage(this)">
+
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=60"
+             onclick="changeImage(this)">
+    </div>
+</section>
+
+<!-- Main Grid Layout -->
+<div class="content-wrapper">
+
+    <div class="left-content">
+
+        <section class="details card">
+            <h3>Property Details</h3>
+            <p><strong>Area:</strong> 875 sqft</p>
+            <p><strong>Bedrooms:</strong> 1</p>
+            <p><strong>Bathrooms:</strong> 1</p>
+            <p><strong>Furnishing:</strong> Semi Furnished</p>
+            <p><strong>Parking:</strong> Bike Parking</p>
+        </section>
+
+        <section class="amenities card">
+            <h3>Amenities</h3>
+            <ul>
+                <li>24/7 Water Supply</li>
+                <li>Security</li>
+                <li>Nearby Bus Stop</li>
+                <li>Walking Distance Market</li>
+            </ul>
+        </section>
+
+        <section class="reviews card">
+            <h3>Reviews</h3>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐
+                <p>Perfect for small family. Affordable and clean.</p>
+                <small>- Priya</small>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>Very good location and peaceful area.</p>
+                <small>- Rohan</small>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-content">
+
+        <section class="owner card">
+            <h3>Owner Information</h3>
+            <p><strong>Name:</strong> Amit Kulkarni</p>
+            <p><strong>Phone:</strong> +91 9090909090</p>
+            <p><strong>Email:</strong> amit@gmail.com</p>
+        </section>
+
+        <section class="contact-form card">
+            <h3>Send Inquiry</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>📍 Kolhapur, Maharashtra | 📞 +91 98602 69423| 📧 support@aapalghar.com</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Aapal Ghar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+function changeImage(element) {
+    document.getElementById("mainImage").src = element.src;
+    const thumbs = document.querySelectorAll(".thumbs img");
+    thumbs.forEach(img => img.classList.remove("active"));
+    element.classList.add("active");
+}
+</script>
+
+</body>
+</html>
